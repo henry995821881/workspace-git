@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans>
+	<bean id="person1" class="com.app.bean.Person">
+		<property name="name" value="true" />
+		<property name="sex" value="2.5" />
+		<property name="leg" ref="leg1" />
+		<property name="age" value="15" />
+	</bean>
+	<bean id="leg1" class="com.app.bean.Leg">
+		<property name="thumb" value="da" />
+		<property name="num" value="2" />
+	</bean>
+	<bean id="defaultActionMapping" class="org.winter.fromwork.DefaultActionMapping" />
+
+	<scan package="com.app" />
+	
+<intercept id="dt0001Action"/>
+<!-- <intercept package="" /> -->
+
+
+</beans>
